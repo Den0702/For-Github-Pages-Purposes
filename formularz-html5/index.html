@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <form action="https://formspree.io/f/mjvjdlnl" method="POST">
+    <fieldset>
+      <div>
+        <label for="name">
+          Name:
+        </label>
+        <input type="text" id="name" name="username" required>
+      </div>
+
+      <div>
+        <label for="surname">
+          Surname:
+        </label>
+        <input type="text" id="surname" name="usersurname" required>
+      </div>
+
+      <div>
+        <label for="email">
+          E-mail:
+        </label>
+        <input type="email" name="usermail" id="email" placeholder="Put your email-adress" required>
+      </div>
+
+      <div>
+        <label for="city">
+          Choose a city:
+        </label>
+        <select name="city" id="city">
+          <option value="krakow">Kraków</option>
+          <option value="warszawa">Warszawa</option>
+          <option value="gdansk">Gdańsk</option>
+        </select>
+      </div>
+
+      <div>
+        Gender:
+      <ul>
+        <li>
+          <label for="genderM">
+            M
+          </label>
+          <input type="radio" name="usergender" id="genderM" required>
+        </li>
+        <li>
+          <label for="genderF">
+            F
+          </label>
+          <input type="radio" name="usergender" id="genderF" required>
+        </li>
+      </ul>
+      </div>
+      <div>
+        <label for="data">
+          Accept of collecting your data:
+        </label>
+        <input type="checkbox" name="userdata" id="data" required>
+      </div>
+      <div>
+        <label for="text">
+          You can leave your message:
+        </label>
+        <div>
+          <textarea id="text" name="usermessage"></textarea>   
+        </div>
+      </div>
+      <input type="button" value="Submit">
+    </fieldset>
+  </form>
+</body>
+
+</html>
